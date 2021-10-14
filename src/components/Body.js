@@ -23,26 +23,26 @@ const Body = () => {
 
                 <div className="features-list grid grid-col sm:grid-cols-2 xl:grid-cols-4 gap-6">
                     <div className="flex flex-col items-start justify-center">
-                        <img src={Online} alt="image online" className='my-8' />
+                        <img src={Online} alt="img-online" className='my-8' />
                         <p className='text1 text-2xl mb-6'>Online Banking</p>
                         <p className='text2'>
                         Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world.
                         </p>
                     </div>
                     <div className="flex flex-col items-start justify-center">
-                        <img src={Budget} alt="image budget" className='my-8' />
+                        <img src={Budget} alt="budget" className='my-8' />
                         <p className='text1 text-2xl mb-6'>Simple Budgeting</p>
                         <p className='text2'>
                         See exactly where your money goes each month. Receive notifications when you’re close to hitting your limits.
                         </p>
                     </div>
                     <div className="flex flex-col items-start justify-center">
-                        <img src={Onboard} alt="image onboard" className='my-8' />
+                        <img src={Onboard} alt="onboard" className='my-8' />
                         <p className='text1 text-2xl mb-6'>Fast Onboarding</p>
                         <p className='text2'>We don’t do branches. Open your account in minutes online and start taking control of your finances right away.</p>
                     </div>
                     <div className="flex flex-col items-start justify-center">
-                        <img src={Api} alt="image api" className='my-8' />
+                        <img src={Api} alt="api" className='my-8' />
                         <p className='text1 text-2xl mb-6'>Open API</p>
                         <p className='text2'>
                         Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier.</p>
