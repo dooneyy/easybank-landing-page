@@ -44,7 +44,7 @@ const Footer = () => {
   
             <div class="attribution">
                 Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-                Coded by <a href="#">Dooneyy</a>.
+                Coded by <a href="/">Dooneyy</a>.
             </div>
         </footer>
     )
