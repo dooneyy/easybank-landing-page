@@ -1,15 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Logo from '../assets/images/logo.svg';
 import Mockup from '../assets/images/image-mockups.png';
-import Close from '../assets/images/icon-close.svg';
-import Open from '../assets/images/icon-hamburger.svg';
 
 const Header = () => {
-    const [openNav, setOpenNav] = useState(false);
-    const showNav = () => {
-        setOpenNav(!openNav); 
-    }
-
     return (
         <div>
            
