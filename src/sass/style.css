@@ -21,7 +21,7 @@ body {
   font-family: var(--font-family);
 }
 
-.nav .btns, .header .btn, .footer-btn {
+.nav .btns, .header .btn, .mobile-header .btn, .footer-btn {
   background: -webkit-gradient(linear, left top, right top, from(var(--limeGreen)), to(var(--brightCyan)));
   background: linear-gradient(to right, var(--limeGreen), var(--brightCyan));
   padding: 10px 30px;
@@ -31,7 +31,7 @@ body {
   transition: .6s;
 }
 
-.nav .btns:hover, .header .btn:hover, .footer-btn:hover {
+.nav .btns:hover, .header .btn:hover, .mobile-header .btn:hover, .footer-btn:hover {
   opacity: .7;
 }
 
@@ -52,19 +52,13 @@ body {
           align-items: center;
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 800px) {
   .nav {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding-left: 25px;
     padding-right: 25px;
-  }
-}
-
-@media only screen and (max-width: 720px) {
-  .nav .btns {
-    display: none;
   }
 }
 
@@ -78,12 +72,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-@media only screen and (max-width: 720px) {
-  .nav ul {
-    display: none;
-  }
 }
 
 .nav ul li {
@@ -108,18 +96,6 @@ body {
   display: block;
 }
 
-.nav .nav-icon {
-  display: none;
-}
-
-@media only screen and (max-width: 720px) {
-  .nav .nav-icon {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-  }
-}
-
 .nav-popup {
   width: 70%;
   margin: 0 auto;
@@ -130,7 +106,7 @@ body {
   position: absolute;
   z-index: 99;
   border-radius: 5px;
-  top: 20px;
+  top: 10%;
   left: 15%;
 }
 
@@ -154,20 +130,6 @@ body {
   background: var(--very-lightGray);
 }
 
-@media only screen and (max-width: 720px) {
-  .header {
-    height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: static;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-}
-
 .header::before {
   position: absolute;
   content: '';
@@ -182,50 +144,6 @@ body {
   background-repeat: no-repeat;
 }
 
-@media only screen and (max-width: 380px) {
-  .header::before {
-    background: url(../assets/images/bg-intro-mobile.svg);
-    position: absolute;
-    content: '';
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-size: 100%;
-    background-repeat: no-repeat;
-  }
-}
-
-@media only screen and (min-width: 381px) and (max-width: 500px) {
-  .header::before {
-    background: url(../assets/images/bg-intro-mobile.svg);
-    position: absolute;
-    content: '';
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-position: 50% -30%;
-    background-size: 100%;
-    background-repeat: no-repeat;
-  }
-}
-
-@media only screen and (min-width: 423px) and (max-width: 600px) {
-  .header::before {
-    background: url(../assets/images/bg-intro-mobile.svg);
-    position: absolute;
-    content: '';
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-position: 50% -80%;
-    background-size: 100%;
-    background-repeat: no-repeat;
-  }
-}
-
 .header-img {
   position: absolute;
   right: 0;
@@ -234,31 +152,9 @@ body {
   z-index: 1;
 }
 
-@media only screen and (max-width: 720px) {
-  .header-img {
-    height: auto;
-    top: -10%;
-  }
-}
-
-@media only screen and (min-width: 423px) and (max-width: 600px) {
-  .header-img {
-    height: 100%;
-    top: -50%;
-  }
-}
-
 .header-hero {
   width: 30%;
   margin: 12% 6%;
-}
-
-@media only screen and (max-width: 720px) {
-  .header-hero {
-    width: auto;
-    margin: 20px;
-    text-align: center;
-  }
 }
 
 .header-title {
@@ -268,6 +164,30 @@ body {
 .header-text {
   color: var(--grayishBlue);
   font-size: 18px;
+}
+
+.mobile-header {
+  height: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 0;
+}
+
+.mobile-header-img {
+  background: url(../assets/images/bg-intro-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100%;
+  margin-top: -25%;
+}
+
+.mobile-header-hero {
+  text-align: center;
+  padding: 0 20px;
 }
 
 .features {

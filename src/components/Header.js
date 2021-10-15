@@ -35,42 +35,9 @@ const Header = () => {
                 <button className='btns'>
                     Request Invite
                 </button>
-                {
-                    openNav ? <button className="nav-icon" onClick={showNav}>
-                                    <img src={Close} alt="icon-open" />
-                                </button> :
-                                <button className="nav-icon" onClick={showNav}>
-                                    <img src={Open} alt="icon-open" />
-                                </button>
-                }
             </nav>
 
-           
-
-            
-
-            <header className='header'>
-            {
-                    openNav ? <div className="nav-popup">
-                    <ul>
-                        <li>
-                           <a href="/">Home</a>
-                        </li>
-                        <li>
-                           <a href="/">About</a>
-                        </li>
-                        <li>
-                           <a href="/">Contact</a>
-                        </li>
-                        <li>
-                            <a href="/">Blog</a>
-                        </li>
-                        <li>
-                            <a href="/">Careers</a> 
-                        </li>
-                    </ul>
-                </div> : ''
-                }
+            <header className='header flex justify-between'>
                <div className="header-hero">
                    <p className='header-title text-3xl lg:text-5xl tracking-wide leading-tight'>
                    Next generation digital banking
