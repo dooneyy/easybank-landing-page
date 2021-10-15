@@ -25,7 +25,7 @@ Users should be able to:
 ![Screenshot (44)](https://user-images.githubusercontent.com/65260475/137561250-14807432-60f7-45bd-90a2-487898eaa880.png)
 
 ### Links
-- Live Site URL: [](https://easybank-landing-page-swart-theta.vercel.app/)
+- Live Site URL: [https://easybank-landing-page-swart-theta.vercel.app/]
 
 
 ### Built with
